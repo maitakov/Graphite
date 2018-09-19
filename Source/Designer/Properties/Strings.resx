@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionCurrConsumption" xml:space="preserve">
+    <value>Consumption</value>
+  </data>
+  <data name="ActionCurrGeneration" xml:space="preserve">
+    <value>Generation</value>
+  </data>
+  <data name="ActionCurrTransformation" xml:space="preserve">
+    <value>Transformation</value>
+  </data>
+  <data name="ActionCurrTransmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="ActionForeConsumption" xml:space="preserve">
+    <value>Consumption</value>
+  </data>
+  <data name="ActionForeGeneration" xml:space="preserve">
+    <value>Generation</value>
+  </data>
+  <data name="ActionForeTransformation" xml:space="preserve">
+    <value>Transformation</value>
+  </data>
+  <data name="ActionForeTransmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="ActionsCurr" xml:space="preserve">
+    <value>Current operations</value>
+  </data>
+  <data name="ActionsFore" xml:space="preserve">
+    <value>Forecast operations</value>
+  </data>
+  <data name="AppTitle" xml:space="preserve">
+    <value>Graphite Editor</value>
+  </data>
+  <data name="DefaultDiagramNameFmt" xml:space="preserve">
+    <value>Control object state {0}</value>
+  </data>
+  <data name="MenuBringToFrontTitle" xml:space="preserve">
+    <value>Bring to Front</value>
+  </data>
+  <data name="MenuCopyAsImageTitle" xml:space="preserve">
+    <value>Copy as Image</value>
+  </data>
+  <data name="MenuCopyTitle" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MenuCutTitle" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="MenuDeleteTitle" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MenuDescription0" xml:space="preserve">
+    <value>No shapes selected</value>
+  </data>
+  <data name="MenuDescription1" xml:space="preserve">
+    <value>More than one shape selected</value>
+  </data>
+  <data name="MenuGroupShapesDescription0" xml:space="preserve">
+    <value>Not enough shapes selected</value>
+  </data>
+  <data name="MenuGroupShapesDescription1" xml:space="preserve">
+    <value>Establish a role visual relationship between</value>
+  </data>
+  <data name="MenuGroupShapesDescription2" xml:space="preserve">
+    <value>objects</value>
+  </data>
+  <data name="MenuGroupShapesTitle" xml:space="preserve">
+    <value>Establish a role visual relationship</value>
+  </data>
+  <data name="MenuPasteDescription" xml:space="preserve">
+    <value>No shapes cut/copied yet</value>
+  </data>
+  <data name="MenuPasteTitle" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="MenuRedoDescription" xml:space="preserve">
+    <value>No redo commands left</value>
+  </data>
+  <data name="MenuRedoTitle" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="MenuSendToBackTitle" xml:space="preserve">
+    <value>Send to Back</value>
+  </data>
+  <data name="MenuShapeInfoTitle" xml:space="preserve">
+    <value>Object information</value>
+  </data>
+  <data name="MenuUndoDescription" xml:space="preserve">
+    <value>No undo commands left</value>
+  </data>
+  <data name="MenuUndoTitle" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="MenuUngroupShapesDescription0" xml:space="preserve">
+    <value>No role visual relationship selected</value>
+  </data>
+  <data name="MenuUngroupShapesDescription1" xml:space="preserve">
+    <value>Break the role visual relationship between</value>
+  </data>
+  <data name="MenuUngroupShapesDescription2" xml:space="preserve">
+    <value>objects</value>
+  </data>
+  <data name="MenuUngroupShapesTitle" xml:space="preserve">
+    <value>Break the role visual relationship</value>
+  </data>
+  <data name="NewProjectName" xml:space="preserve">
+    <value>New project</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="ObjectDiagram" xml:space="preserve">
+    <value>Diagram</value>
+  </data>
+  <data name="ObjectProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ObjectRVR" xml:space="preserve">
+    <value>Role visual relationship</value>
+  </data>
+  <data name="Objects" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="SituationCurr" xml:space="preserve">
+    <value>Current o-situation</value>
+  </data>
+  <data name="SituationFore" xml:space="preserve">
+    <value>O-situation forecast</value>
+  </data>
+  <data name="StateCurr" xml:space="preserve">
+    <value>Current state</value>
+  </data>
+  <data name="StateFore" xml:space="preserve">
+    <value>State forecast</value>
+  </data>
+  <data name="SuffixRepair" xml:space="preserve">
+    <value> repair</value>
+  </data>
+  <data name="WeatherCurr" xml:space="preserve">
+    <value>Current weather</value>
+  </data>
+  <data name="WeatherFore" xml:space="preserve">
+    <value>Weather forecast</value>
+  </data>
+</root>

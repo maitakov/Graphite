@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataweb_nshape version="5">
+  <project id="b1cf8b8d-401c-47e4-b929-02b1bb33c9f6" last_saved_utc="2018-04-26 22:31:11" description="">
+    <libraries>
+      <library name="FhisShapes" assembly_name="Dataweb.NShape.FhisShapes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1512080cd664963c" repository_version="5" />
+    </libraries>
+    <images></images>
+    <color_styles>
+      <color_style id="d5b7e78b-aa4c-43e9-8282-ae9887c2706e" name="Background" title="" color="-4144960" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="dcfa28a6-62f1-41a8-8c04-fb159ec3344b" name="Black" title="" color="-16777216" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="5f0ded57-b93e-4646-972c-ac8a41516e91" name="Blue" title="" color="-12156236" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="63ade3e3-1459-4660-92a6-b53a8481ee12" name="Gray" title="" color="-8355712" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="c15cfd8e-ba51-49aa-8238-dfbc32ff01be" name="Green" title="" color="-13726889" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="a6f5fe21-aaf3-4e41-bed9-10df668f933d" name="Highlight" title="" color="-29696" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="097fafa1-8711-4a3d-8121-b80f17594013" name="HighlightText" title="" color="-16777088" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="5611eff2-16db-4695-956d-ed2e3e3ba3f6" name="LightBlue" title="" color="-5192482" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="691740b1-68df-44e1-b600-15a5120c29e5" name="LightGray" title="" color="-2894893" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="618d14da-0478-4038-a02d-8f22537d5091" name="LightGreen" title="" color="-7357301" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="f943fa65-ac8d-46e1-881f-d01be3dbe5cd" name="LightRed" title="" color="-24454" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="38df7cd6-1fd3-44b5-ac88-9b6672c73e1e" name="LightYellow" title="" color="-329006" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="247eefec-8810-4375-bbb4-000ea0bcb237" name="Red" title="" color="-5103070" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="4c316072-a749-4b74-8eb9-a204f8e500c9" name="Text" title="" color="-16777216" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="998b1a47-70b2-42a5-8ae2-87a518c1b04a" name="Transparent" title="" color="16777215" transparency="100" convert_to_gray="False"></color_style>
+      <color_style id="39c25546-d31a-446f-ae64-c64291d76a04" name="White" title="" color="-1" transparency="0" convert_to_gray="False"></color_style>
+      <color_style id="329162e2-37e0-4f89-95e0-2974f9fc1833" name="Yellow" title="" color="-10496" transparency="0" convert_to_gray="False"></color_style>
+    </color_styles>
+    <cap_styles>
+      <cap_style id="2ab19823-a3f0-4c29-8772-cadb32ad5b1e" name="ArrowClosed" title="" cap_shape="1" cap_size="12" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></cap_style>
+      <cap_style id="a1fa7087-1a43-4f0b-875d-57149d19b818" name="ArrowOpen" title="" cap_shape="2" cap_size="12" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></cap_style>
+      <cap_style id="18514f3d-7b16-43b4-87d1-0859a87ef8b5" name="None" title="" cap_shape="0" cap_size="12" color_style="39c25546-d31a-446f-ae64-c64291d76a04"></cap_style>
+      <cap_style id="cf488f50-cf70-4d0d-9f5c-b061b6217c44" name="Special1" title="" cap_shape="3" cap_size="6" color_style="39c25546-d31a-446f-ae64-c64291d76a04"></cap_style>
+      <cap_style id="a0c4b050-0df8-40f7-abc4-b1a6298a34ac" name="Special2" title="" cap_shape="5" cap_size="6" color_style="39c25546-d31a-446f-ae64-c64291d76a04"></cap_style>
+    </cap_styles>
+    <character_styles>
+      <character_style id="c4cc30aa-0bec-4f72-a8fb-2f5f4bfb19d5" name="Caption" title="" font_name="Tahoma" size="1000" decoration="0" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+      <character_style id="09706360-f202-4d23-843a-2da5cb86a8b3" name="Heading1" title="" font_name="Tahoma" size="3600" decoration="1" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+      <character_style id="245427b9-d3ab-44ca-bc58-a0f7eb05a870" name="Heading2" title="" font_name="Tahoma" size="2400" decoration="1" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+      <character_style id="cfbb68f5-284b-4eca-8b74-9495047c0f80" name="Heading3" title="" font_name="Tahoma" size="1600" decoration="1" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+      <character_style id="f49b35c9-2588-438b-9691-b8bb5ddf7784" name="Normal" title="" font_name="Tahoma" size="1200" decoration="0" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+      <character_style id="31ba917b-2577-4090-9cfd-c5bfebfa96da" name="Subtitle" title="" font_name="Tahoma" size="1200" decoration="1" color_style="4c316072-a749-4b74-8eb9-a204f8e500c9"></character_style>
+    </character_styles>
+    <fill_styles>
+      <fill_style id="ee089fd6-8d5f-4b35-a145-83d4726c6fa5" name="Black" title="" base_color_style="63ade3e3-1459-4660-92a6-b53a8481ee12" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="0" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="c0b1618c-b898-4671-919e-97a66033e52f" name="Blue" title="" base_color_style="5611eff2-16db-4695-956d-ed2e3e3ba3f6" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="0" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="3c3ec79c-4b85-4a0e-8044-4959a46d0b68" name="Green" title="" base_color_style="618d14da-0478-4038-a02d-8f22537d5091" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="0" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="49f44345-296f-4ffe-a8b8-396aa86274cb" name="Red" title="" base_color_style="f943fa65-ac8d-46e1-881f-d01be3dbe5cd" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="0" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="117d1b09-3428-4084-923e-24987df476be" name="Transparent" title="" base_color_style="998b1a47-70b2-42a5-8ae2-87a518c1b04a" additional_color_style="998b1a47-70b2-42a5-8ae2-87a518c1b04a" fill_mode="1" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="8fd67cb2-353e-4d08-a276-ae6b700b60d9" name="White" title="" base_color_style="39c25546-d31a-446f-ae64-c64291d76a04" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="1" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+      <fill_style id="9e4d0575-cf52-443f-ac04-111ff1e8c47f" name="Yellow" title="" base_color_style="38df7cd6-1fd3-44b5-ac88-9b6672c73e1e" additional_color_style="39c25546-d31a-446f-ae64-c64291d76a04" fill_mode="0" fill_pattern="3" convert_to_gray_scale="False" image_layout="5" image_transparency="0" image_gamma_correction="1" image_compression_quality="100" image_file_name="" image=""></fill_style>
+    </fill_styles>
+    <line_styles>
+      <line_style id="e762bb9c-3764-4b5a-b171-c3eeab28f52a" name="Blue" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="5f0ded57-b93e-4646-972c-ac8a41516e91"></line_style>
+      <line_style id="1b2c38d4-c12c-4a0c-988e-857d1e97566f" name="Dashed" title="" line_width="1" dash_type="1" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="0189bdba-416e-4f03-b90d-b6d4bf0bdee7" name="Dotted" title="" line_width="1" dash_type="2" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="2c998c8a-248a-4ba0-a765-794a38bf2f03" name="Green" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="c15cfd8e-ba51-49aa-8238-dfbc32ff01be"></line_style>
+      <line_style id="a6936a6f-4820-437a-a68d-0290b6271167" name="Highlight" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="a6f5fe21-aaf3-4e41-bed9-10df668f933d"></line_style>
+      <line_style id="64f929e7-86ce-4bf9-8136-028c7df30779" name="HighlightDashed" title="" line_width="1" dash_type="1" dash_cap="2" line_join="2" color_style="a6f5fe21-aaf3-4e41-bed9-10df668f933d"></line_style>
+      <line_style id="e7800898-c1fb-439c-9f30-5c56ad3bfbe5" name="HighlightDotted" title="" line_width="1" dash_type="2" dash_cap="2" line_join="2" color_style="a6f5fe21-aaf3-4e41-bed9-10df668f933d"></line_style>
+      <line_style id="55fa09b3-c012-4f7f-ae62-90d2757c7361" name="HighlightThick" title="" line_width="3" dash_type="0" dash_cap="2" line_join="2" color_style="a6f5fe21-aaf3-4e41-bed9-10df668f933d"></line_style>
+      <line_style id="5a4832e7-284b-4672-8757-95d440ed5d23" name="None" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="998b1a47-70b2-42a5-8ae2-87a518c1b04a"></line_style>
+      <line_style id="7254d6ae-4fa7-418e-bb37-92f261f47e1c" name="Normal" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="079e5c13-a7fa-42c6-9c3d-65d89a5d3b6d" name="Red" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="247eefec-8810-4375-bbb4-000ea0bcb237"></line_style>
+      <line_style id="49b28f71-4f7b-47cb-82f5-fda20b1c7127" name="Special1" title="" line_width="1" dash_type="3" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="fb7e621c-b242-4ba2-9735-1b47debed759" name="Special2" title="" line_width="1" dash_type="4" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="e4179289-440d-4979-8c99-d0a15f18fb80" name="Thick" title="" line_width="3" dash_type="0" dash_cap="2" line_join="2" color_style="dcfa28a6-62f1-41a8-8c04-fb159ec3344b"></line_style>
+      <line_style id="2b8a4fa6-ee65-4299-adc4-365f5f6ba1f1" name="Yellow" title="" line_width="1" dash_type="0" dash_cap="2" line_join="2" color_style="329162e2-37e0-4f89-95e0-2974f9fc1833"></line_style>
+    </line_styles>
+    <paragraph_styles>
+      <paragraph_style id="761d98a5-2cc9-45a7-bcfd-853b8f84fb18" name="Label" title="" alignment="16" trimming="3" padding_left="3" padding_top="3" padding_right="3" padding_bottom="3" word_wrap="False"></paragraph_style>
+      <paragraph_style id="1e001bef-a30b-44c7-968e-d623c7126d6d" name="Text" title="" alignment="1" trimming="3" padding_left="3" padding_top="3" padding_right="3" padding_bottom="3" word_wrap="True"></paragraph_style>
+      <paragraph_style id="cda9ab15-049b-47aa-a540-c5597a81b4cb" name="Title" title="" alignment="32" trimming="3" padding_left="3" padding_top="3" padding_right="3" padding_bottom="3" word_wrap="True"></paragraph_style>
+    </paragraph_styles>
+    <model id="f20c2ecf-ee5f-4b49-957c-31cdbbbdf095">
+      <model_objects></model_objects>
+    </model>
+    <templates>
+      <template id="0c5793e3-8cf9-449d-943c-4b807d87305c" name="Ресурс" title="" description="">
+        <no_model></no_model>
+        <fhis_shapes._ресурс id="9b1b892f-61ba-4153-a994-eaddfb58825a" template="00000000-0000-0000-0000-000000000000" model_object="00000000-0000-0000-0000-000000000000" x="0" y="0" z_order="0" layers="0" security_domain_name="A" line_style="7254d6ae-4fa7-418e-bb37-92f261f47e1c" data="" angle="0" fill_style="117d1b09-3428-4084-923e-24987df476be" character_style="f49b35c9-2588-438b-9691-b8bb5ddf7784" paragraph_style="cda9ab15-049b-47aa-a540-c5597a81b4cb" text="" width="60" height="40"></fhis_shapes._ресурс>
+        <connection_point_mappings />
+        <model_mappings></model_mappings>
+      </template>
+      <template id="934131b6-ca15-49a4-a031-4f50810508ea" name="Свойство" title="" description="">
+        <no_model></no_model>
+        <fhis_shapes._свойство id="8824c594-aa96-40e7-893f-eddd910d708d" template="00000000-0000-0000-0000-000000000000" model_object="00000000-0000-0000-0000-000000000000" x="0" y="0" z_order="0" layers="0" security_domain_name="A" line_style="7254d6ae-4fa7-418e-bb37-92f261f47e1c" data="" angle="0" fill_style="117d1b09-3428-4084-923e-24987df476be" character_style="f49b35c9-2588-438b-9691-b8bb5ddf7784" paragraph_style="cda9ab15-049b-47aa-a540-c5597a81b4cb" text="" a_x="0" a_y="-27" b_x="-20" b_y="13" c_x="20" c_y="13"></fhis_shapes._свойство>
+        <connection_point_mappings />
+        <model_mappings></model_mappings>
+      </template>
+      <template id="d0273394-137e-4bb0-9b25-62f6dd322fc9" name="Действие" title="" description="">
+        <no_model></no_model>
+        <fhis_shapes._действие id="c9e679ff-719e-48de-8bd7-30f3ed53b5fd" template="00000000-0000-0000-0000-000000000000" model_object="00000000-0000-0000-0000-000000000000" x="0" y="0" z_order="0" layers="0" security_domain_name="A" line_style="7254d6ae-4fa7-418e-bb37-92f261f47e1c" data="" angle="0" fill_style="117d1b09-3428-4084-923e-24987df476be" character_style="f49b35c9-2588-438b-9691-b8bb5ddf7784" paragraph_style="cda9ab15-049b-47aa-a540-c5597a81b4cb" text="" width="60" height="40" head_width="30" body_height="13"></fhis_shapes._действие>
+        <connection_point_mappings />
+        <model_mappings></model_mappings>
+      </template>
+    </templates>
+    <diagrams>
+      <diagram id="108daaa2-fd55-4c44-a3eb-ece336ddd019" name="Диаграмма 1" title="" security_domain="A" width="1678" height="900" background_color="-657931" background_gradient_end_color="-1" background_image_file_name="" background_image="" image_layout="0" image_gamma="1" image_transparency="0" image_gray_scale="False" image_transparent_color="0">
+        <layers />
+        <shapes>
+          <shape_group id="b00f54cd-68cb-4da5-a9fa-dc2b5ff27d13" template="00000000-0000-0000-0000-000000000000" x="450" y="220" z_order="80" layers="0" angle="0" data="">
+            <children>
+              <fhis_shapes._действие id="a55a1aff-d010-436b-aaca-b613cea40455" template="d0273394-137e-4bb0-9b25-62f6dd322fc9" model_object="00000000-0000-0000-0000-000000000000" x="450" y="220" z_order="70" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" width="300" height="120" head_width="40" body_height="40"></fhis_shapes._действие>
+              <shape_group id="4d847bc8-9e39-40a9-97e9-569d15a2d2c6" template="00000000-0000-0000-0000-000000000000" x="440" y="220" z_order="60" layers="0" angle="0" data="">
+                <children>
+                  <fhis_shapes._свойство id="350a54ff-e473-4082-b518-80534a13486d" template="934131b6-ca15-49a4-a031-4f50810508ea" model_object="00000000-0000-0000-0000-000000000000" x="493" y="220" z_order="50" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" a_x="27" a_y="-40" b_x="-53" b_y="0" c_x="27" c_y="40"></fhis_shapes._свойство>
+                  <fhis_shapes._свойство id="059d2969-87b0-4905-a872-04148e60c89c" template="934131b6-ca15-49a4-a031-4f50810508ea" model_object="00000000-0000-0000-0000-000000000000" x="440" y="247" z_order="40" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" a_x="0" a_y="-27" b_x="-80" b_y="13" c_x="79" c_y="13"></fhis_shapes._свойство>
+                  <fhis_shapes._свойство id="8ac8cdc8-a84e-4db1-9368-b81530d442b8" template="934131b6-ca15-49a4-a031-4f50810508ea" model_object="00000000-0000-0000-0000-000000000000" x="440" y="193" z_order="30" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" a_x="-80" a_y="-13" b_x="0" b_y="27" c_x="80" c_y="-13"></fhis_shapes._свойство>
+                  <fhis_shapes._свойство id="09244f0f-9ffd-4f08-b252-eeb7ed9faf6f" template="934131b6-ca15-49a4-a031-4f50810508ea" model_object="00000000-0000-0000-0000-000000000000" x="387" y="220" z_order="20" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" a_x="-27" a_y="-40" b_x="-27" b_y="40" c_x="53" c_y="0"></fhis_shapes._свойство>
+                  <fhis_shapes._ресурс id="e34bfce9-7f52-484a-9b91-c8e801904e0e" template="0c5793e3-8cf9-449d-943c-4b807d87305c" model_object="00000000-0000-0000-0000-000000000000" x="440" y="220" z_order="10" layers="0" security_domain_name="A" line_style="00000000-0000-0000-0000-000000000000" data="" angle="0" fill_style="00000000-0000-0000-0000-000000000000" character_style="00000000-0000-0000-0000-000000000000" paragraph_style="00000000-0000-0000-0000-000000000000" text="" width="160" height="80"></fhis_shapes._ресурс>
+                </children>
+              </shape_group>
+            </children>
+          </shape_group>
+        </shapes>
+        <shape_connections></shape_connections>
+      </diagram>
+    </diagrams>
+  </project>
+</dataweb_nshape>

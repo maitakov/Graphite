@@ -1,0 +1,1 @@
+@del "%APPDATA%\dataweb\NShape\NShape Designer\Config.cfg"
