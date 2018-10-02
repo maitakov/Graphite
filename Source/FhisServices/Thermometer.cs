@@ -211,6 +211,10 @@ namespace Dataweb.NShape.FhisServices
 			if (!base.CalculatePath())
 				return false;
 
+			if(Width == 0
+			|| Height == 0)
+				return false;
+
 			Path.Reset();
 			int arcRadius = GetArcRadius()
 				, left = (int)Math.Round(-Width / 2f)

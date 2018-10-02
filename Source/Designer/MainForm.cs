@@ -1827,6 +1827,7 @@ namespace Dataweb.NShape.Designer
 				display.ShapesInserted += display_ShapesInserted;
 				display.ShapesRemoved += display_ShapesRemoved;
 				display.ZoomChanged += display_ZoomChanged;
+				display.MapProviderChanged += display_MapProviderChanged;
 				display.StaticPropsCountChanged += display_PropsCountChanged;
 				display.DynamicPropsCountChanged += display_PropsCountChanged;
 				display.ToolTipTextChanged += display_ToolTipTextChanged;
@@ -1844,6 +1845,7 @@ namespace Dataweb.NShape.Designer
 				display.ShapesInserted -= display_ShapesInserted;
 				display.ShapesRemoved -= display_ShapesRemoved;
 				display.ZoomChanged -= display_ZoomChanged;
+				display.MapProviderChanged -= display_MapProviderChanged;
 				display.StaticPropsCountChanged -= display_PropsCountChanged;
 				display.DynamicPropsCountChanged -= display_PropsCountChanged;
 				display.ToolTipTextChanged -= display_ToolTipTextChanged;
@@ -3902,6 +3904,54 @@ namespace Dataweb.NShape.Designer
 		private Weather currWeather = null;
 		private Weather foreWeather = null;
 
+		private bool emptyMapProvider = true;
+		private void display_MapProviderChanged(object sender, EventArgs e)
+		{	if(CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
+			{	if(!emptyMapProvider)
+				{	emptyMapProvider = true;
+
+					weatherCurr.Children.Remove(weatherCurrBarometer);		weatherCurrBarometer = null;
+					weatherCurr.Children.Remove(weatherCurrHygrometer);		weatherCurrHygrometer = null;
+					weatherCurr.Children.Remove(weatherCurrWindvane);		weatherCurrWindvane = null;
+					weatherCurr.Children.Remove(weatherCurrThermometer);	weatherCurrThermometer = null;
+					weatherCurr.Children.Remove(weatherCurrImage);			weatherCurrImage = null;
+					weatherCurr.Children.Remove(weatherCurrWatch);			weatherCurrWatch = null;
+					weatherCurr.Children.Remove(weatherCurrCalendar);		weatherCurrCalendar = null;
+					CurrentDisplay.DeleteShape(weatherCurr);				weatherCurr = null;
+
+					weatherFore.Children.Remove(weatherForeBarometer);		weatherForeBarometer = null;
+					weatherFore.Children.Remove(weatherForeHygrometer);		weatherForeHygrometer = null;
+					weatherFore.Children.Remove(weatherForeWindvane);		weatherForeWindvane = null;
+					weatherFore.Children.Remove(weatherForeThermometer);	weatherForeThermometer = null;
+					weatherFore.Children.Remove(weatherForeImage);			weatherForeImage = null;
+					weatherFore.Children.Remove(weatherForeWatch);			weatherForeWatch = null;
+					weatherFore.Children.Remove(weatherForeCalendar);		weatherForeCalendar = null;
+					CurrentDisplay.DeleteShape(weatherFore);				weatherFore = null;
+
+					situationCurr.Children.Remove(currWatch);				currWatch = null;
+					situationCurr.Children.Remove(currCalendar);			currCalendar = null;
+					situationCurr.Children.Remove(actionsCurr.Acts.circleOuter);
+					situationCurr.Children.Remove(stateCurr.DynamicProperties.circleOuter);
+					CurrentDisplay.DeleteShape(situationCurr);				situationCurr = null;
+
+					situationFore.Children.Remove(foreWatch);				foreWatch = null;
+					situationFore.Children.Remove(foreCalendar);			foreCalendar = null;
+					situationFore.Children.Remove(actionsFore.Acts.circleOuter);
+					situationFore.Children.Remove(stateFore.DynamicProperties.circleOuter);
+					CurrentDisplay.DeleteShape(situationFore);				situationFore = null;
+
+					ShowGrid = showGridMenuItem.Checked;
+				}
+			}
+			else
+			{	if(emptyMapProvider)
+				{	emptyMapProvider = false;
+
+					CreateVehicle();
+				}
+			}
+		}
+
 		private void CreateVehicle()
 		{	ShapeType actionType = null
 				, circleType = null
@@ -4148,11 +4198,13 @@ namespace Dataweb.NShape.Designer
 			timerEnergyFlow.Start();
 
 			CurrentDisplay.MapProvider = GMap.NET.MapProviders.OpenStreetMapProvider.Instance;
+			emptyMapProvider = false;
 			ShowGrid = false;
 		}
 
 		internal void ChangeVehicle()
-		{	if(this.WindowState == FormWindowState.Minimized)
+		{	if(this.WindowState == FormWindowState.Minimized
+			|| CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
 				return;
 
 			Diagram diagram = CurrentDisplay.Diagram;
@@ -4437,7 +4489,10 @@ namespace Dataweb.NShape.Designer
 		}
 
 		internal void ChangeCurrTime(DateTime time)
-		{	Diagram diagram = CurrentDisplay.Diagram;
+		{	if(CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
+				return;
+
+			Diagram diagram = CurrentDisplay.Diagram;
 			((IDiagramPresenter)CurrentDisplay).SuspendUpdate();
 
 			currCalendar.Date = time.Date;
@@ -4599,7 +4654,10 @@ namespace Dataweb.NShape.Designer
 		}
 
 		internal void ChangeForeTime(DateTime time)
-		{	((IDiagramPresenter)CurrentDisplay).SuspendUpdate();
+		{	if(CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
+				return;
+
+			((IDiagramPresenter)CurrentDisplay).SuspendUpdate();
 
 			foreCalendar.Date = time.Date;
 			foreWatch.Time = time;
@@ -4778,7 +4836,10 @@ namespace Dataweb.NShape.Designer
 //#else
 //		private void GetCurrentWeather()
 //#endif
-		{	XmlDocument xmlDocument = GetWeatherDocument(currWeatherRequestUri);
+		{	if(CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
+				return;
+
+			XmlDocument xmlDocument = GetWeatherDocument(currWeatherRequestUri);
 			List<Weather> weathers = ParseWeatherDocument(xmlDocument);
 			if(weathers != null && weathers.Count > 0)
 				lock(weatherCurr)
@@ -4795,7 +4856,10 @@ namespace Dataweb.NShape.Designer
 //#else
 //		private void GetForecastWeather()
 //#endif
-		{	XmlDocument xmlDocument = GetWeatherDocument(foreWeatherRequestUri);
+		{	if(CurrentDisplay.MapProvider is GMap.NET.MapProviders.EmptyProvider)
+				return;
+
+			XmlDocument xmlDocument = GetWeatherDocument(foreWeatherRequestUri);
 			List<Weather> weathers = ParseWeatherDocument(xmlDocument);
 			if(weathers != null)
 			{	Weather weather;
@@ -5265,14 +5329,16 @@ namespace Dataweb.NShape.Designer
 			base.OnClientSizeChanged(e);
 			if(Display != null
 			&& Display.Diagram != null)
-			{	Size size = ClientSize;
-				size.Height -= DiagramDesignerMainForm.padding*2;// + DiagramDesignerMainForm.diameter;
-				size.Width -= DiagramDesignerMainForm.padding*2;
-				Display.Diagram.Location = new Point(DiagramDesignerMainForm.padding, DiagramDesignerMainForm.padding);
-				Display.Diagram.Size = size;
+			{	DiagramDesignerMainForm form = (DiagramDesignerMainForm)FindForm();
+				if(form.WindowState != FormWindowState.Minimized)
+				{	Size size = ClientSize;
+					size.Height -= DiagramDesignerMainForm.padding*2;// + DiagramDesignerMainForm.diameter;
+					size.Width -= DiagramDesignerMainForm.padding*2;
+					Display.Diagram.Location = new Point(DiagramDesignerMainForm.padding, DiagramDesignerMainForm.padding);
+					Display.Diagram.Size = size;
 
-				DiagramDesignerMainForm form = (DiagramDesignerMainForm)FindForm();
-				form.ChangeVehicle();
+					form.ChangeVehicle();
+				}
 			}
 		}
 
