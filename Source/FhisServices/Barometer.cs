@@ -114,7 +114,8 @@ namespace Dataweb.NShape.FhisServices
 		/// <override></override>
 		protected override bool CalculatePath()
 		{
-			if (!base.CalculatePath())
+			if (!base.CalculatePath()
+			|| Diameter == 0)
 				return false;
 
 			int left = (int)Math.Round(-Diameter / 2f);

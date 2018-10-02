@@ -208,10 +208,8 @@ namespace Dataweb.NShape.FhisServices
 		/// <override></override>
 		protected override bool CalculatePath()
 		{
-			if (!base.CalculatePath())
-				return false;
-
-			if(Width == 0
+			if (!base.CalculatePath()
+			|| Width == 0
 			|| Height == 0)
 				return false;
 
