@@ -268,7 +268,6 @@
     <Content Include="..\Dataweb.NShape.ico">
       <Link>Resources\Dataweb.NShape.ico</Link>
     </Content>
-    <EmbeddedResource Include="AI\wine.clp" />
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>

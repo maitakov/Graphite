@@ -2532,6 +2532,24 @@ namespace Dataweb.NShape.Designer
 			{
 				MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+
+			string dirName = @"E:\Projects\Graphite\!clips"
+			//	, fileName = "lline_off.clp"
+				, fileName = "nepolnofaz.clp"
+			//	, fileName = "shini.clp"
+			//	, fileName = "trans_off.clp"
+				;
+			CLIPSNET.Environment clips = new CLIPSNET.Environment();
+			string s = File.ReadAllText(Path.Combine(dirName, fileName), Encoding.GetEncoding(1251));
+			//clips.LoadFromResource("GraphiteEditor", "Dataweb.NShape.Designer.clips.nepolnofaz.clp");
+			//clips.LoadFromResource("GraphiteEditor", "Dataweb.NShape.Designer.wine.clp");
+			clips.LoadFromString(s);
+		//	clips.Reset();
+
+			List<CLIPSNET.FactInstance> facts = clips.GetFactList();
+			foreach(CLIPSNET.FactInstance fact in facts)
+			{
+			}
 		}
 
 
