@@ -101,6 +101,7 @@ namespace Dataweb.NShape.Designer
 		private static string electricPowerLinesFile = ConfigurationManager.AppSettings["electricPowerLinesFile"];
 		private static ColorsGrouping colorsGrouping = (ColorsGrouping)Enum.Parse(typeof(ColorsGrouping), ConfigurationManager.AppSettings["colorsGrouping"]);
 		private static int energyFlowInterval = int.Parse(ConfigurationManager.AppSettings["energyFlowInterval"]);
+		private static string clipsRulesPath = ConfigurationManager.AppSettings["clipsRulesPath"];
 		private static string exePath;
 		private static Dictionary<string, MenuItemInfo> menuTitles = new Dictionary<string, MenuItemInfo>();
 
@@ -2533,14 +2534,14 @@ namespace Dataweb.NShape.Designer
 				MessageBox.Show(this, ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
-			string dirName = @"E:\Projects\Graphite\!clips"
-			//	, fileName = "lline_off.clp"
-				, fileName = "nepolnofaz.clp"
-			//	, fileName = "shini.clp"
-			//	, fileName = "trans_off.clp"
+			string
+			//	fileName = "lline_off.clp"
+				fileName = "nepolnofaz.clp"
+			//	fileName = "shini.clp"
+			//	fileName = "trans_off.clp"
 				;
 			CLIPSNET.Environment clips = new CLIPSNET.Environment();
-			string s = File.ReadAllText(Path.Combine(dirName, fileName), Encoding.GetEncoding(1251));
+			string s = File.ReadAllText(Path.Combine(clipsRulesPath, fileName), Encoding.GetEncoding(1251));
 			//clips.LoadFromResource("GraphiteEditor", "Dataweb.NShape.Designer.clips.nepolnofaz.clp");
 			//clips.LoadFromResource("GraphiteEditor", "Dataweb.NShape.Designer.wine.clp");
 			clips.LoadFromString(s);
@@ -5046,6 +5047,7 @@ namespace Dataweb.NShape.Designer
 			electricPowerLinesFile = ConfigurationManager.AppSettings["electricPowerLinesFile"];
 			colorsGrouping = (ColorsGrouping)Enum.Parse(typeof(ColorsGrouping), ConfigurationManager.AppSettings["colorsGrouping"]);
 			energyFlowInterval = int.Parse(ConfigurationManager.AppSettings["energyFlowInterval"]);
+			clipsRulesPath = ConfigurationManager.AppSettings["clipsRulesPath"];
 
 			ChangeLanguage();
 
